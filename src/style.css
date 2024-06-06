@@ -1,1 +1,73 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+html,
+body {
+  height: 100%;
+}
+
+html {
+  display: table;
+  margin: auto;
+}
+
+body {
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #fff;
+}
+
+.card-container {
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  height: 630px;
+  border-radius: 20px;
+  position: relative;
+  text-align: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.number {
+  font-size: 200px;
+  margin: auto;
+  display: inline;
+}
+
+.simbol-top {
+  font-size: 100px;
+  position: absolute;
+  top: 10px;
+  left: 40px;
+}
+.simbol-bottom {
+  font-size: 100px;
+  position: absolute;
+  bottom: 10px;
+  right: 40px;
+  transform: rotate(180deg);
+}
+
+.button-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.newCard-btn {
+	background-color: rgb(179, 179, 179);
+	color: white;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 10px;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.newCard-btn:hover {
+	background-color: grey;
+}
+
+.newCard-btn:active {
+	background-color: rgb(68, 68, 68);
+}
