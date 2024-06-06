@@ -49,25 +49,25 @@ body {
 }
 
 .button-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .newCard-btn {
-	background-color: rgb(179, 179, 179);
-	color: white;
-	margin-top: 15px;
-	margin-bottom: 15px;
-	padding: 10px;
-	border: none;
-	border-radius: 10px;
-	cursor: pointer;
+  background-color: rgb(179, 179, 179);
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .newCard-btn:hover {
-	background-color: grey;
+  background-color: grey;
 }
 
 .newCard-btn:active {
-	background-color: rgb(68, 68, 68);
+  background-color: rgb(68, 68, 68);
 }

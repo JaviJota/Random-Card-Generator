@@ -1,6 +1,15 @@
+/* eslint-disable */
+// import "bootstrap";
+import "./style.css";
+
+// import "./assets/img/rigo-baby.jpg";
+// import "./assets/img/4geeks.ico";
+
+// window.onload = function() {
 let simbolTop = document.querySelector(".simbol-top");
 let simbolBottom = document.querySelector(".simbol-bottom");
 let number = document.querySelector(".number");
+let newCardBtn = document.querySelector(".newCard-btn");
 let intervalId;
 
 const simbol = ["♦", "♥", "♠", "♣"];
@@ -10,6 +19,11 @@ function getRandomCard() {
   getRandomNumber();
   getRandomSimbol();
 }
+
+newCardBtn.addEventListener("click", function() {
+  getRandomCard();
+  startInterval();
+});
 
 //Generar número aleatorio de carta
 function getRandomNumber() {
@@ -47,3 +61,4 @@ window.onload = function() {
   getRandomCard();
   startInterval();
 };
+// };
