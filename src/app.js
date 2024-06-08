@@ -28,9 +28,10 @@ newCardBtn.addEventListener("click", function() {
 //Generar número aleatorio de carta
 function getRandomNumber() {
   let randomNumber = Math.floor(Math.random() * 12 + 1);
-  if (randomNumber == 10) number.innerHTML = "J";
-  else if (randomNumber == 11) number.innerHTML = "Q";
-  else if (randomNumber == 12) number.innerHTML = "K";
+  if (randomNumber == 1) number.innerHTML = 'As';
+  else if (randomNumber == 10) number.innerHTML = 'J';
+  else if (randomNumber == 11) number.innerHTML = 'Q';
+  else if (randomNumber == 12) number.innerHTML = 'K';
   else number.innerHTML = randomNumber;
 }
 
@@ -40,11 +41,11 @@ function getRandomSimbol() {
   simbolTop.innerHTML = simbol[randomSimbolNumber];
   simbolBottom.innerHTML = simbol[randomSimbolNumber];
   if (randomSimbolNumber == 0 || randomSimbolNumber == 1) {
-    simbolTop.style.color = "red";
-    simbolBottom.style.color = "red";
+    simbolTop.style.color = 'red';
+    simbolBottom.style.color = 'red';
   } else {
-    simbolTop.style.color = "black";
-    simbolBottom.style.color = "black";
+    simbolTop.style.color = 'black';
+    simbolBottom.style.color = 'black';
   }
 }
 
